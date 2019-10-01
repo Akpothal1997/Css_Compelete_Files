@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS forms</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background: white url("img/image1.jpg") no-repeat scroll bottom;
+        }
+        .form-div{
+            width: 250px;
+            text-align: center;
+            margin: 200px auto;
+            background-color: rgba(0,174,239,0.5);
+            box-shadow: 0 0 10px lightblue;
+            border-radius: 10px;
+            padding: 15px;
+        }
+        .form-div h2{
+            color: white;
+            margin: 10px;
+        }
+        .form-div img{
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px lightblue;
+        }
+        .inputField{
+            text-align: center;
+            font-size: 18px;
+            height: 35px;
+            width: 200px;
+            border: none;
+            outline: none;
+            margin: 5px;
+            background: transparent;
+            border-bottom: 3px solid lightblue;
+            color: white;
+        }
+        .inputField:focus{
+            border-bottom: 3px solid white;
+        }
+        ::placeholder{
+            color: lightblue;
+        }
+        #login-btn{
+            background-color: #00aeef;
+            color: white;
+            border: none;
+            font-size: 18px;
+            margin: 15px;
+            padding: 10px 25px;
+            width: 150px;
+            border-radius: 50px;
+            box-shadow: 0 0 5px black;
+        }
+        #login-btn:hover{
+            background-color: #12a4db;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Login Form -->
+    <div class="form-div">
+        <img src="img/user.png">
+        <h2>Login Here</h2>
+        <form>
+            <input type="text" placeholder="User Name" class="inputField">
+            <br>
+            <input type="password" placeholder="Password" class="inputField">
+            <br>
+            <input type="submit" value="Login" id="login-btn">
+        </form>
+    </div>
+
+</body>
+</html>

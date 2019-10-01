@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap/css/font-awesome-5.8.1.css">
+    <title>CSS Flex Buttons</title>
+    <style>
+        .parent{
+            background-color: #ccb499;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .circle{
+            width: 100px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            box-shadow: 0 0 5px black;
+            margin: 5px;
+        }
+        .btn-1{
+            background: linear-gradient(45deg,black,red);
+        }
+        .btn-2{
+            background: linear-gradient(45deg,black,yellow);
+        }
+        .btn-3{
+            background: linear-gradient(45deg,black,blue);
+        }
+        .btn-4{
+            background: linear-gradient(45deg,black,green);
+        }
+        .btn-5{
+            background: linear-gradient(45deg,black,purple);
+        }
+        .btn-6{
+            background: linear-gradient(45deg,black,lime);
+        }
+        @media (max-width: 650px) {
+            .parent{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+
+        <div class="circle btn-1">
+            <i class="fa fa-paper-plane fa-3x"></i>
+        </div>
+
+        <div class="circle btn-2">
+            <i class="fa fa-share-alt fa-3x"></i>
+        </div>
+
+        <div class="circle btn-3">
+            <i class="fa fa-snowflake fa-3x"></i>
+        </div>
+
+        <div class="circle btn-4">
+            <i class="fa fa-user-circle fa-3x"></i>
+        </div>
+
+        <div class="circle btn-5">
+            <i class="fa fa-pen-alt fa-3x"></i>
+        </div>
+
+        <div class="circle btn-6">
+            <i class="fa fa-spinner fa-spin fa-3x"></i>
+        </div>
+
+    </div>
+
+</body>
+</html>
